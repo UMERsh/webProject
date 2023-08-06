@@ -1,0 +1,148 @@
+.homebackground{
+    background-image: url("../../assets/unsplash.jpeg");
+    // height: 1586px;
+    // width: 1056px;
+    height: 100vh;
+    
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bold;
+  color: #ed4e53(37, 37, 37);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+  background: #ed4e53(193, 228, 248);
+  color: #a6a0a0(85, 0, 83);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hoverEffect div {
+  background: rgb(500,0,75);
+  background: linear-gradient(90deg,#a1163f(222,0,75,1) 0%, #ed4e53(191,70,255,1) 49%, #ed4e53(0,212,255,1) 100%);
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.5;
+}
+
+.button:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+@keyframes effect {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// h1{
+//   // font-size:50px;
+//   // line-height: 40px;
+//   // font-family: "Oswald",sans-serif;
+//   // margin-bottom: 20px;
+//   // text-transform: uppercase;
+//   //   font-weight: 700;
+//   //   margin-block-start: 0.67em;
+//   //   margin-block-end: 0.67em;
+//   //   margin-inline-start: 0px;
+//   //   margin-inline-end: 0px;
+//   //   display: block;
+
+
+//     font-weight: 1000;
+//     line-height: 28px;
+//     color: #1D2228;
+//     font-size: 100px;
+//     line-height: 80px;
+//     font-family: "Oswald",sans-serif;
+//     text-transform: uppercase;
+//     margin: 0 0 20px;
+//     width : 578px;
+//     height: 160px;
+
+    
+    
+//   }
+  
+  // h4{
+  // font-size: 26px;
+  // font-family: "Oswald",serif;
+  //   font-weight: 1000;
+  //   display: block;
+  //   margin-block-start: 1.33em;
+  //   margin-block-end: 1.33em;
+  //   margin-inline-start: 0px;
+  //   margin-inline-end: 0px;
+  //   width : 578px;
+  //   height: 32px;
+    
+    
+  // }
+  
+// p{
+//   display: block;
+//   margin-block-start: 1em;
+//   margin-block-end: 1em;
+//   margin-inline-start: 0px;
+//   margin-inline-end: 0px;
+//   line-height: 28px;
+//   width : 578px;
+//     height: 84px;
+//     font-size: 14px;
+//     color: #848486;
+// }
+
+.hd {
+  background-image: url("../../assets//employer-64.png"),linear-gradient(rgba(39, 39, 39, 0.87), rgba(39, 39, 39, 0.87));
+
+  background-size: cover;
+  // background-position: center;
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+}
